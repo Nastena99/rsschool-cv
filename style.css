@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+
+/* common */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header, .main, .footer {
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* ------------ header ------------ */
+
+/* nav */
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 8rem;
+  background: #f7d5db;
+}
+.nav__site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0;
+}
+.nav__link {
+  margin-right: 2rem;
+  list-style: none;
+  transition: .2s;
+}
+.nav__link>a {
+  font-size: 1.1rem;
+  color: #706f6f;
+}
+.nav__link:hover {
+  transform: scale(1.05);
+}
+.nav__link>a:hover {
+  color: #353535;
+}
+
+/* photo */
+.header__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  background: #FCEBE3;
+}
+.photo__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  width: 60%;
+  height: 60%;
+}
+.position {
+  margin: 0;
+  color: #706f6f;
+}
+
+
+/* ------------ main ------------ */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main > * {
+  flex-grow: 1;
+}
+
+/* contacts */
+.contacts {
+  padding: 2rem;
+  background: #fdf5f2;
+}
+.main__title-h2 {
+  margin: 0;
+}
+.contacts__contact-link {
+  font-weight: 600;
+}
+
+/* about myself */
+.about-myself {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+/* skills */
+.skills {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+/* courses */
+.curses {
+  padding: 2rem;
+  background: #fdf5f2;
+}
+
+/* code */
+.code {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.code__block-code {
+  display: inline-block;
+  padding: .5rem 2rem;
+  color: #ffffff;
+  background: #1F1F1F;
+}
+.dark-blue {
+  color: #368CD6;
+}
+.light-yellow {
+  color: #D7983D;
+}
+.yellow {
+  color: #DBD70A;
+}
+.blue {
+  color: #9CDCFE;
+}
+.purple {
+  color: #ce54d4;
+}
+.green {
+  color: #07aa07;
+}
+
+/* projects */
+.projects {
+  padding: 2rem;
+  background: #fdf5f2;
+}
+
+/* language */
+.language {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 8rem;
+  background: #f7d5db;
+}
+
+.footer__list-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.footer__git>a, .footer__logo>a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+}
+.footer__git>a:hover, .footer__logo>a:hover {
+  transform: scale(1.05);
+}
+.footer__git>a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url(assets/github.svg) no-repeat;
+}
+.footer__logo>a {
+  width: 6rem;
+  height: 2.5rem;
+  background: url(assets/rss.svg) no-repeat;
+}
