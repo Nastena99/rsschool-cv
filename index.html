@@ -4,8 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>CV#2. HTML, CSS &amp; Git Basics</title>
+  <title>Anastasiya Gardienko</title>
 </head>
-<body>
+<body class="body">
+
+  <header class="header">
+
+    <nav class="header__nav nav">
+      <ul class="nav__site-navigation">
+        <li class="nav__link"><a href="#">Contacts</a></li>
+        <li class="nav__link"><a href="#">About myself</a></li>
+        <li class="nav__link"><a href="#">Education and courses</a></li>
+        <li class="nav__link"><a href="#">Code example</a></li>
+        <li class="nav__link"><a href="#">Projects</a></li>
+        <li class="nav__link"><a href="#">Language</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header__photo photo">
+      <div class="photo__photo">
+        <img src="assets/25042021020322Zara.png" alt="image" class="avatar">
+      </div>
+      <div class="photo__name">
+        <h1 class="name">Anastasiya Gardienko</h1>
+      </div>
+      <div class="photo__position">
+        <h3 class="position">Junior Frontend Developer</h3>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="contacts">
+      <h2 class="main__title-h2">Contacts:</h2>
+      <ul class="contacts__list">
+        <li class="contacts__contact"><span class="contacts__contact-name">Discord:</span><a class="contacts__contact-link" href="#">Nastya99(@Nastena99)</a></li>
+        <li class="contacts__contact"><span class="contacts__contact-name">E-mail:</span><a class="contacts__contact-link" href="#">nastagar.kam99@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="about-myself">
+      <h2 class="main__title-h2">About myself:</h2>
+      <p class="about-myself__description">Some time ago I discovered programming, namely the WEB, and I was very attracted to it. All this time I studied programming on my own with the help of videos and various Internet resources. Recently I heard about RSSchool and decided to try to study here.</p>
+    </div>
+    <div class="curses">
+      <h2 class="main__title-h2">Education and courses:</h2>
+      <ol class="courses__list">
+        <li class="courses__sourse"><a href="#">Modern JavaScript Self-Study</a></li>
+        <li class="courses__sourse"><a href="#">Mdm web docs</a></li>
+        <li class="courses__sourse"><a href="#">HTML and CSS - WebReference site</a></li>
+        <li class="courses__sourse"><a href="#">Bogdan Stashchuk - video</a></li>
+      </ol>
+    </div>
+    <div class="code">
+      <h2 class="main__title-h2">Code example:</h2>
+      <pre>
+        <code class="code__block-code">
+          <span class="dark-blue">function</span> <span class="light-yellow">decoder</span><span class="yellow">(</span><span class="blue">num</span><span class="yellow">)</span> <span class="yellow">{</span>
+            <span class="purple">return</span> <span class="green">String</span>.<span class="light-yellow">fromCharCode</span><span class="purple">(</span><span class="blue">num</span><span class="purple">)</span>;
+          <span class="yellow">}</span>
+        </code>
+      </pre>
+    </div>
+    <div class="projects">
+      <h2 class="main__title-h2">Projects:</h2>
+      <ul class="projects__list">
+        <li class="projects__project">This project</li>
+      </ul>
+    </div>
+    <div class="language">
+      <h2 class="main__title-h2">Projects:</h2>
+      <ul class="language__list">
+        <li class="language__project">English level: A1</li>
+        <li class="language__project">Russian level: native</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__list-links">
+      <li class="footer__git"><a href="#"></a></li>
+      <li class="footer__year">2023</li>
+      <li class="footer__logo"><a href="#"></a></li>
+    </ul>
+  </footer>
+  
 </body>
 </html>
